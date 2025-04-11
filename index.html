@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Narcissus Restaurant</title>
+</head>
+<aside>
+    <nav class="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="add-recipe.html">Add Recipe</a>
+        <a href="recipe-list.html">Recipe List</a>
+    </nav>
+
+</aside>
+<header>
+
+    <section>
+        <h1>Welcome to Narcissus Recipe Book✨</h1>
+        <h2>The joy of cooking with simple, delicious recipes that bring people together.<br> This book is your
+            invitation to create magic in the kitchen one dish at a time.</h2>
+    </section>
+
+</header>
+
+<body>
+
+    <h1>Recipe of the Day:</h1>
+    <h2>Bolani - Afghan Stuffed Flatbread</h2>
+    <article class="description">
+        Bolani is a popular Afghan flatbread dish, typically filled with vegetables like potatoes,
+        spinach, or pumpkin. It's often fried or baked until crispy and golden brown,
+        making it a savory and flavorful treat.
+    </article>
+    <img src="images/Bolani.jpg" alt="Bolani Picture" width="300" height="300"><br>
+    <a href="recipe-list.html">
+        <input type="button" value="You can Click here for see Recipe">
+    </a>
+    <form action="index.html" method="get">
+        <h3>Rate The Narcissus Recipe:</h3>
+        <div class="star-rating">
+            <input type="radio" id="5stars-Roll" name="rating-Roll" value="5">
+            <label for="5stars-Roll">&#9733;</label>
+
+            <input type="radio" id="4stars-Roll" name="rating-Roll" value="4">
+            <label for="4stars-Roll">&#9733;</label>
+
+            <input type="radio" id="3stars-Roll" name="rating-Roll" value="3">
+            <label for="3stars-Roll">&#9733;</label>
+
+            <input type="radio" id="2stars-Roll" name="rating-Roll" value="2">
+            <label for="2stars-Roll">&#9733;</label>
+
+            <input type="radio" id="1star-Roll" name="rating-Roll" value="1">
+            <label for="1star-Roll">&#9733;</label>
+        </div>
+        <input type="submit" value="Submit Rating">
+    </form>
+    <h2>Featured Categories:</h2>
+    <ul>
+        <li><a href="recipe-list.html#Main_Dishes">
+                <input type="button" value="Main Dishes">
+            </a></li>
+        <li><a href="recipe-list.html#desserts">
+                <input type="button" value="Desserts">
+            </a></li>
+        <li><a href="recipe-list.html#appetizers">
+                <input type="button" value="Appetizers">
+            </a></li>
+        <li><a href="recipe-list.html#drinks">
+                <input type="button" value="Drinks">
+            </a></li>
+        <li><a href="recipe-list.html#salads">
+                <input type="button" value="Salads">
+            </a></li>
+    </ul>
+</body>
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2025 Narcissus Recipe Book. All rights reserved. </p>
+    </div>
+</footer>
+
+</html>
