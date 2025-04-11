@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Recipe List</title>
+</head>
+
+<body>
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="add-recipe.html">Add Recipe</a>
+        <a href="recipe-list.html" class="active">Recipe List</a>
+
+        <form class="nav-search-form">
+            <input type="text" placeholder="Search recipes...">
+            <button type="submit">Search</button>
+        </form>
+
+    </nav>
+    <ul>
+        <h1>Narcissus Recipe Gallery💎</h1>
+        <label for="Category"><b>Recipe Category:</b></label>
+        <select name="catogary" id="Category" required onchange="location = this.value;">
+            <option value="" disabled selected>Category...</option>
+            <option value="#appetizers">Appetizers</option>
+            <option value="#Main_Dishes">Main Dishes</option>
+            <option value="#desserts">Desserts</option>
+            <option value="#salads">Salads</option>
+            <option value="#drinks">Drinks</option>
+        </select><br><br>
+
+    </ul>
+
+
+
+    <ul>
+        <li>
+            <h2 id="Main_Dishes">Main Dishes</h2>
+        </li>
+        <ul>
+            <li>
+                <h3>Ashak</h3>
+                <img src="images/ashak_.jpg" alt="Ashak" width="300" height="300">
+                <p class="description">
+                    Ashak is a traditional Afghan dish made of dumplings filled with leeks and herbs,
+                    served with a meat sauce, garlic yogurt, and mint. It's a flavorful,
+                    comforting meal enjoyed in Afghan cuisine.
+                </p>
+                <table border="1">
+                    <tr>
+                        <th colspan="4">Nutritional Information (per serving)</th>
+                    </tr>
+                    <tr>
+                        <th>Calories</th>
+                        <th>Fat</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                    </tr>
+                    <tr>
+                        <td>190 kcal</td>
+                        <td>6g</td>
+                        <td>5g</td>
+                        <td>28g</td>
+                    </tr>
+
+                </table><br>
+                <a href="recipe-details.html" target="_blank">
+                    <input type="button" value="View Full Recipe Detail">
+                </a>
+                <form action="index.html" method="get">
+                    <h3>Rate this Recipe:</h3>
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars" name="rating" value="5">
+                        <label for="5-stars">&#9733;</label>
+
+                        <input type="radio" id="4-stars" name="rating" value="4">
+                        <label for="4-stars">&#9733;</label>
+
+                        <input type="radio" id="3-stars" name="rating" value="3">
+                        <label for="3-stars">&#9733;</label>
+
+                        <input type="radio" id="2-stars" name="rating" value="2">
+                        <label for="2-stars">&#9733;</label>
+
+                        <input type="radio" id="1-star" name="rating" value="1">
+                        <label for="1-star">&#9733;</label>
+                    </div>
+                    <input type="submit" value="Submit Rating">
+                </form>
+
+
+
+            </li>
+
+
+            <li>
+                <h3 id="bolani">Bolani</h3>
+                <img src="images/Bolani_2.jpg" alt="Bolani" width="300" height="300">
+                <p class="description">
+                    Bolani is a popular Afghan flatbread dish, typically filled with vegetables like potatoes,
+                    spinach, or pumpkin. It's often fried or baked until crispy and golden brown,
+                    making it a savory and flavorful treat.
+                </p>
+                <table border="1">
+                    <tr>
+                        <th colspan="4">Nutritional Information (per serving)</th>
+                    </tr>
+                    <tr>
+                        <th>Calories</th>
+                        <th>Fat</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                    </tr>
+                    <tr>
+                        <td>220 kcal</td>
+                        <td>8g</td>
+                        <td>6g</td>
+                        <td>30g</td>
+                    </tr>
+
+                </table>
+                <br>
+                <a href="recipe-details.html" target="_blank">
+                    <input type="button" value="View Full Recipe Detail">
+                </a>
+
+                <form action="index.html" method="get">
+                    <h3>Rate this Recipe:</h3>
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars-bolani" name="rating-bolani" value="5">
+                        <label for="5-stars-bolani">&#9733;</label>
+
+                        <input type="radio" id="4-stars-bolani" name="rating-bolani" value="4">
+                        <label for="4-stars-bolani">&#9733;</label>
+
+                        <input type="radio" id="3-stars-bolani" name="rating-bolani" value="3">
+                        <label for="3-stars-bolani">&#9733;</label>
+
+                        <input type="radio" id="2-stars-bolani" name="rating-bolani" value="2">
+                        <label for="2-stars-bolani">&#9733;</label>
+
+                        <input type="radio" id="1-star-bolani" name="rating-bolani" value="1">
+                        <label for="1-star-bolani">&#9733;</label>
+                    </div>
+                    <input type="submit" value="Submit Rating">
+                </form>
+
+            </li>
+
+            <li>
+                <h3>Qabili Pallaw</h3>
+                <img src="images/Qabili_Palaw.jpg" alt="Qabili Palaw" width="300" height="300">
+                <p class="description">
+                    A beloved Afghan classic, Qabili Pallaw features tender meat,
+                    fragrant basmati rice, and a signature topping of sweet carrots,
+                    raisins, and nuts. It's a perfect harmony of aroma, flavor, and tradition in every bite.
+                </p>
+                <table border="1">
+                    <tr>
+                        <th colspan="4">Nutritional Information (per serving)</th>
+                    </tr>
+                    <tr>
+                        <th>Calories</th>
+                        <th>Fat</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                    </tr>
+                    <tr>
+                        <td>400 kcal</td>
+                        <td>15g</td>
+                        <td>20g</td>
+                        <td>45g</td>
+                    </tr>
+                </table>
+                <br>
+                <a href="recipe-details.html" target="_blank">
+                    <input type="button" value="View Full Recipe Detail">
+                </a>
+
+                <form action="index.html" method="get">
+                    <h3>Rate this Recipe:</h3>
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars-Qabili" name="rating-Qabili" value="5">
+                        <label for="5-stars-Qabili">&#9733;</label>
+
+                        <input type="radio" id="4-stars-Qabili" name="rating-Qabili" value="4">
+                        <label for="4-stars-Qabili">&#9733;</label>
+
+                        <input type="radio" id="3-stars-Qabili" name="rating-Qabili" value="3">
+                        <label for="3-stars-Qabili">&#9733;</label>
+
+                        <input type="radio" id="2-stars-Qabili" name="rating-Qabili" value="2">
+                        <label for="2-stars-Qabili">&#9733;</label>
+
+                        <input type="radio" id="1-star-Qabili" name="rating-Qabili" value="1">
+                        <label for="1-star-Qabili">&#9733;</label>
+                    </div>
+                    <input type="submit" value="Submit Rating">
+                </form>
+            </li>
+
+            <li>
+                <h3>Chapli -Kebab</h3>
+                <img src="images/Chapli_Kebab.jpg" alt="Chapli Kebab" width="300" height="300">
+                <p class="description">
+                    Bold and bursting with flavor, Chapli Kebab is a cherished Afghan delicacy made from spiced minced
+                    meat,
+                    fresh herbs, and crushed spices. Pan-fried to perfection, each bite is crispy, juicy, and
+                    irresistibly rich in taste.
+                </p>
+                <table border="1">
+                    <tr>
+                        <th colspan="4">Nutritional Information (per serving)</th>
+                    </tr>
+                    <tr>
+                        <th>Calories</th>
+                        <th>Fat</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                    </tr>
+                    <tr>
+                        <td>320 kcal</td>
+                        <td>22g</td>
+                        <td>18g</td>
+                        <td>5g</td>
+                    </tr>
+
+                </table>
+                <br>
+                <a href="recipe-details.html" target="_blank">
+                    <input type="button" value="View Full Recipe Detail">
+                </a>
+                <form action="index.html" method="get">
+                    <h3>Rate this Recipe:</h3>
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars-Kebab" name="rating-Kebab" value="5">
+                        <label for="5-stars-Kebab">&#9733;</label>
+
+                        <input type="radio" id="4-stars-Kebab" name="rating-Kebab" value="4">
+                        <label for="4-stars-Kebab">&#9733;</label>
+
+                        <input type="radio" id="3-stars-Kebab" name="rating-Kebab" value="3">
+                        <label for="3-stars-Kebab">&#9733;</label>
+
+                        <input type="radio" id="2-stars-Kebab" name="rating-Kebab" value="2">
+                        <label for="2-stars-Kebab">&#9733;</label>
+
+                        <input type="radio" id="1-star-Kebab" name="rating-Kebab" value="1">
+                        <label for="1-star-Kebab">&#9733;</label>
+                    </div>
+                    <input type="submit" value="Submit Rating">
+                </form>
+            </li>
+
+
+        </ul>
+
+    </ul>
+
+    <ul>
+        <li>
+            <h2 id="desserts">Desserts</h2>
+        </li>
+        <ul>
+
+            <li>
+                <h3>Sheer Pira</h3>
+                <img src="images/SheerPira.jpg" alt="Sheer Pira" width="300" height="300">
+                <p class="description">
+                    Sheer Pira is a delightful Afghan dessert made from a smooth blend of
+                    milk, sugar, and cardamom. Its soft, creamy texture, combined with the subtle crunch of chopped
+                    nuts,
+                    creates a rich and indulgent treat that's simply irresistible. A true taste of comfort and sweetness
+                    in every bite.
+                </p>
+                <table border="1">
+                    <tr>
+                        <th colspan="4">Nutritional Information (per serving)</th>
+                    </tr>
+                    <tr>
+                        <th>Calories</th>
+                        <th>Fat</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                    </tr>
+                    <tr>
+                        <td>250 kcal</td>
+                        <td>10g</td>
+                        <td>4g</td>
+                        <td>35g</td>
+                    </tr>
+
+                </table>
+                <br>
+                <a href="recipe-details.html" target="_blank">
+                    <input type="button" value="View Full Recipe Detail">
+                </a>
+                <form action="index.html" method="get">
+                    <h3>Rate this Recipe:</h3>
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars-SheerPira" name="rating-SheerPira" value="5">
+                        <label for="5-stars-SheerPira">&#9733;</label>
+
+                        <input type="radio" id="4-stars-SheerPira" name="rating-SheerPira" value="4">
+                        <label for="4-stars-SheerPira">&#9733;</label>
+
+                        <input type="radio" id="3-stars-SheerPira" name="rating-SheerPira" value="3">
+                        <label for="3-stars-SheerPira">&#9733;</label>
+
+                        <input type="radio" id="2-stars-SheerPira" name="rating-SheerPira" value="2">
+                        <label for="2-stars-SheerPira">&#9733;</label>
+
+                        <input type="radio" id="1-star-SheerPira" name="rating-SheerPira" value="1">
+                        <label for="1-star-SheerPira">&#9733;</label>
+                    </div>
+                    <input type="submit" value="Submit Rating">
+                </form>
+
+
+            </li>
+
+
+            <li>
+                <h3>Cream Roll</h3>
+                <img src="images/Cream_Roll.jpg" alt="Cream -Roll" width="300" height="300">
+                <p class="description">
+                    Cream Roll is a delightful Afghan pastry, filled with velvety cream and wrapped in a soft,
+                    flaky dough. Its delicate sweetness and light texture make it a perfect indulgence, offering a
+                    satisfying balance of flavor in every bite.
+                </p>
+                <table border="1">
+                    <tr>
+                        <th colspan="4">Nutritional Information (per serving)</th>
+                    </tr>
+                    <tr>
+                        <th>Calories</th>
+                        <th>Fat</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                    </tr>
+                    <tr>
+                        <td>300 kcal</td>
+                        <td>15g</td>
+                        <td>5g</td>
+                        <td>35g</td>
+                    </tr>
+
+                </table>
+                <br>
+                <a href="recipe-details.html" target="_blank">
+                    <input type="button" value="View Full Recipe Detail">
+                </a>
+                <form action="index.html" method="get">
+                    <h3>Rate this Recipe:</h3>
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars-Roll" name="rating-Roll" value="5">
+                        <label for="5-stars-Roll">&#9733;</label>
+
+                        <input type="radio" id="4-stars-Roll" name="rating-Roll" value="4">
+                        <label for="4-stars-Roll">&#9733;</label>
+
+                        <input type="radio" id="3-stars-Roll" name="rating-Roll" value="3">
+                        <label for="3-stars-Roll">&#9733;</label>
+
+                        <input type="radio" id="2-stars-Roll" name="rating-Roll" value="2">
+                        <label for="2-stars-Roll">&#9733;</label>
+
+                        <input type="radio" id="1-star-Roll" name="rating-Roll" value="1">
+                        <label for="1-star-Roll">&#9733;</label>
+                    </div>
+                    <input type="submit" value="Submit Rating">
+                </form>
+            </li>
+            <li>
+                <h3>Ice Cream</h3>
+                <img src="images/Ice_Cream.jpg" alt="Ice Cream" width="300" height="400">
+                <p class="description">
+                    A delightful dessert of creamy strawberry ice cream, elegantly presented in a crystal sundae dish.
+                    Topped with a fluffy dollop of whipped cream and fresh strawberries, this indulgent treat is a
+                    perfect blend of sweetness and freshness.
+                </p>
+                <table border="1">
+                    <tr>
+                        <th colspan="4">Nutritional Information (per serving)</th>
+                    </tr>
+                    <tr>
+                        <th>Calories</th>
+                        <th>Fat</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                    </tr>
+                    <tr>
+                        <td>200 kcal</td>
+                        <td>11g</td>
+                        <td>3g</td>
+                        <td>22g</td>
+                    </tr>
+
+                </table>
+                <br>
+                <a href="recipe-details.html" target="_blank">
+                    <input type="button" value="View Full Recipe Detail">
+                </a>
+                <form action="index.html" method="get">
+                    <h3>Rate this Recipe:</h3>
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars-ice-cream" name="rating-ice-cream" value="5">
+                        <label for="5-stars-ice-cream">&#9733;</label>
+
+                        <input type="radio" id="4-stars-ice-cream" name="rating-ice-cream" value="4">
+                        <label for="4-stars-ice-cream">&#9733;</label>
+
+                        <input type="radio" id="3-stars-ice-cream" name="rating-ice-cream" value="3">
+                        <label for="3-stars-ice-cream">&#9733;</label>
+
+                        <input type="radio" id="2-stars-ice-cream" name="rating-ice-cream" value="2">
+                        <label for="2-stars-ice-cream">&#9733;</label>
+
+                        <input type="radio" id="1-star-ice-cream" name="rating-ice-cream" value="1">
+                        <label for="1-star-ice-cream">&#9733;</label>
+                    </div>
+                    <input type="submit" value="Submit Rating">
+                </form>
+            </li>
+
+        </ul>
+
+
+
+    </ul>
+
+    <ul>
+        <li>
+            <h2 id="drinks">Drinks</h2>
+        </li>
+        <ul>
+            <li>
+                <h3>Sheer Chai</h3>
+                <img src="images/SheerChai.jpg" alt="Sheer Chai" width="300" height="300">
+                <p class="description">
+                    Sheer Chai is a traditional Afghan drink made with warm milk infused with aromatic spices like
+                    cardamom and saffron.
+                    Its creamy texture and fragrant flavors create a soothing and comforting experience.
+                </p>
+                <table border="1">
+                    <tr>
+                        <th colspan="4">Nutritional Information (per serving)</th>
+                    </tr>
+                    <tr>
+                        <th>Calories</th>
+                        <th>Fat</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                    </tr>
+                    <tr>
+                        <td>120 kcal</td>
+                        <td>5g</td>
+                        <td>3g</td>
+                        <td>15g</td>
+                    </tr>
+
+                </table>
+                <br>
+                <a href="recipe-details.html" target="_blank">
+                    <input type="button" value="View Full Recipe Detail">
+                </a>
+                <form action="index.html" method="get">
+                    <h3>Rate this Recipe:</h3>
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars-chai" name="rating-chai" value="5">
+                        <label for="5-stars-chai">&#9733;</label>
+
+                        <input type="radio" id="4-stars-chai" name="rating-chai" value="4">
+                        <label for="4-stars-chai">&#9733;</label>
+
+                        <input type="radio" id="3-stars-chai" name="rating-chai" value="3">
+                        <label for="3-stars-chai">&#9733;</label>
+
+                        <input type="radio" id="2-stars-chai" name="rating-chai" value="2">
+                        <label for="2-stars-chai">&#9733;</label>
+
+                        <input type="radio" id="1-star-chai" name="rating-chai" value="1">
+                        <label for="1-star-chai">&#9733;</label>
+                    </div>
+                    <input type="submit" value="Submit Rating">
+                </form>
+            </li>
+            <li>
+                <h3>Green Tea</h3>
+                <img src="images/Green_Tea.jpg" alt="Green Tea" width="300" height="300">
+                <p class="description">
+                    A fragrant and soothing Afghan green tea, gently infused with natural herbs and spices.
+                    Its light, earthy flavor offers a refreshing and calming experience, perfect for moments of
+                    relaxation.
+                </p>
+                <table border="1">
+                    <tr>
+                        <th colspan="4">Nutritional Information (per serving)</th>
+                    </tr>
+                    <tr>
+                        <th>Calories</th>
+                        <th>Fat</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                    </tr>
+                    <tr>
+                        <td>2 kcal</td>
+                        <td>0g</td>
+                        <td>0g</td>
+                        <td>0g</td>
+                    </tr>
+
+                </table>
+                <br>
+                <a href="recipe-details.html" target="_blank">
+                    <input type="button" value="View Full Recipe Detail">
+                </a>
+                <form action="index.html" method="get">
+                    <h3>Rate this Recipe:</h3>
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars-tea" name="rating-tea" value="5">
+                        <label for="5-stars-tea">&#9733;</label>
+
+                        <input type="radio" id="4-stars-tea" name="rating-tea" value="4">
+                        <label for="4-stars-tea">&#9733;</label>
+
+                        <input type="radio" id="3-stars-tea" name="rating-tea" value="3">
+                        <label for="3-stars-tea">&#9733;</label>
+
+                        <input type="radio" id="2-stars-tea" name="rating-tea" value="2">
+                        <label for="2-stars-tea">&#9733;</label>
+
+                        <input type="radio" id="1-star-tea" name="rating-tea" value="1">
+                        <label for="1-star-tea">&#9733;</label>
+                    </div>
+                    <input type="submit" value="Submit Rating">
+                </form>
+            </li>
+        </ul>
+    </ul>
+
+    <ul>
+        <li>
+            <h2 id="appetizers">Appetizers</h2>
+        </li>
+        <ul>
+            <li>
+                <h3>Crispy Golden Halloumi Sticks</h3>
+                <img src="images/Sticks.jpg" alt="Halloumi Sticks" width="300" height="300">
+                <p class="description">
+                    This delicious appetizer is made from halloumi cheese, cut into thin pieces and then fried to create
+                    a crispy, golden layer.
+                    The distinct, slightly salty flavor of halloumi, combined with its delightful crunch, offers a
+                    unique and tasty experience.
+                </p>
+                <table border="1">
+                    <tr>
+                        <th colspan="4">Nutritional Information (per serving)</th>
+                    </tr>
+                    <tr>
+                        <th>Calories</th>
+                        <th>Fat</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                    </tr>
+                    <tr>
+                        <td>280 kcal</td>
+                        <td>20g</td>
+                        <td>14g</td>
+                        <td>8g</td>
+                    </tr>
+
+                </table>
+                <br>
+                <a href="recipe-details.html" target="_blank">
+                    <input type="button" value="View Full Recipe Detail">
+                </a>
+                <form action="index.html" method="get">
+                    <h3>Rate this Recipe:</h3>
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars-Crispy" name="rating-Crispy" value="5">
+                        <label for="5-stars-Crispy">&#9733;</label>
+
+                        <input type="radio" id="4-stars-Crispy" name="rating-Crispy" value="4">
+                        <label for="4-stars-Crispy">&#9733;</label>
+
+                        <input type="radio" id="3-stars-Crispy" name="rating-Crispy" value="3">
+                        <label for="3-stars-Crispy">&#9733;</label>
+
+                        <input type="radio" id="2-stars-Crispy" name="rating-Crispy" value="2">
+                        <label for="2-stars-Crispy">&#9733;</label>
+
+                        <input type="radio" id="1-star-Crispy" name="rating-Crispy" value="1">
+                        <label for="1-star-Crispy">&#9733;</label>
+                    </div>
+                    <input type="submit" value="Submit Rating">
+                </form>
+            </li>
+            <li>
+                <h3>Love Arrow Fruit Skewers</h3>
+                <img src="images/Fruit.jpg" alt="Fruit" width="300" height="400">
+                <p class="description">
+                    A delightful combination of fresh, vibrant fruits arranged on skewers.
+                    These colorful and refreshing treats offer a perfect balance of sweetness, making every bite a
+                    delicious experience.
+                </p>
+                <table border="1">
+                    <tr>
+                        <th colspan="4">Nutritional Information (per serving)</th>
+                    </tr>
+                    <tr>
+                        <th>Calories</th>
+                        <th>Fat</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                    </tr>
+                    <tr>
+                        <td>60 kcal</td>
+                        <td>0g</td>
+                        <td>1g</td>
+                        <td>15g</td>
+                    </tr>
+
+                </table>
+                <br>
+                <a href="recipe-details.html" target="_blank">
+                    <input type="button" value="View Full Recipe Detail">
+                </a>
+                <form action="index.html" method="get">
+                    <h3>Rate this Recipe:</h3>
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars-Fruit" name="rating-Fruit" value="5">
+                        <label for="5-stars-Fruit">&#9733;</label>
+
+                        <input type="radio" id="4-stars-Fruit" name="rating-Fruit" value="4">
+                        <label for="4-stars-Fruit">&#9733;</label>
+
+                        <input type="radio" id="3-stars-Fruit" name="rating-Fruit" value="3">
+                        <label for="3-stars-Fruit">&#9733;</label>
+
+                        <input type="radio" id="2-stars-Fruit" name="rating-Fruit" value="2">
+                        <label for="2-stars-Fruit">&#9733;</label>
+
+                        <input type="radio" id="1-star-Fruit" name="rating-Fruit" value="1">
+                        <label for="1-star-Fruit">&#9733;</label>
+                    </div>
+                    <input type="submit" value="Submit Rating">
+                </form>
+            </li>
+
+        </ul>
+    </ul>
+    <ul>
+        <li>
+            <h2 id="salads">Salads</h2>
+        </li>
+        <ul>
+            <li>
+                <h3>Shirazi Salad</h3>
+                <img src="images/Shirazi_salad.jpg" alt="Shirazi Salad" width="300" height="300">
+                <p class="description">
+                    A fresh and vibrant mix of cucumber, tomato, and onion, dressed in a tangy blend of lemon, olive
+                    oil, and mint.
+                    This light, refreshing salad is the perfect balance of flavors, offering a crisp and zesty bite with
+                    every forkful.
+                </p>
+                <table border="1">
+                    <tr>
+                        <th colspan="4">Nutritional Information (per serving)</th>
+                    </tr>
+                    <tr>
+                        <th>Calories</th>
+                        <th>Fat</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                    </tr>
+                    <tr>
+                        <td>80 kcal</td>
+                        <td>4g</td>
+                        <td>1g</td>
+                        <td>10g</td>
+                    </tr>
+
+                </table>
+                <br>
+                <a href="recipe-details.html" target="_blank">
+                    <input type="button" value="View Full Recipe Detail">
+                </a>
+                <form action="index.html" method="get">
+                    <h3>Rate this Recipe:</h3>
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars-Shirazi" name="rating-Shirazi" value="5">
+                        <label for="5-stars-Shirazi">&#9733;</label>
+
+                        <input type="radio" id="4-stars-Shirazi" name="rating-Shirazi" value="4">
+                        <label for="4-stars-Shirazi">&#9733;</label>
+
+                        <input type="radio" id="3-stars-Shirazi" name="rating-Shirazi" value="3">
+                        <label for="3-stars-Shirazi">&#9733;</label>
+
+                        <input type="radio" id="2-stars-Shirazi" name="rating-Shirazi" value="2">
+                        <label for="2-stars-Shirazi">&#9733;</label>
+
+                        <input type="radio" id="1-star-Shirazi" name="rating-Shirazi" value="1">
+                        <label for="1-star-Shirazi">&#9733;</label>
+                    </div>
+                    <input type="submit" value="Submit Rating">
+                </form>
+            </li>
+            <li>
+                <h3>Vegan Greek Salad</h3>
+                <img src="images/vegan_greek_Salad.jpg" alt="Vegan Greek Salad" width="300" height="300">
+                <p class="description">
+                    A colorful medley of crisp cucumbers, ripe tomatoes, red onions, olives, and bell peppers, tossed in
+                    a tangy olive oil and lemon dressing.
+                    This refreshing, plant-based salad captures the essence of Greek flavors in every bite.
+                </p>
+                <table border="1">
+                    <tr>
+                        <th colspan="4">Nutritional Information (per serving)</th>
+                    </tr>
+                    <tr>
+                        <th>Calories</th>
+                        <th>Fat</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                    </tr>
+                    <tr>
+                        <td>110 kcal</td>
+                        <td>7g</td>
+                        <td>3g</td>
+                        <td>10g</td>
+                    </tr>
+
+                </table>
+                <br>
+                <a href="recipe-details.html" target="_blank">
+                    <input type="button" value="View Full Recipe Detail">
+                </a>
+                <form action="index.html" method="get">
+                    <h3>Rate this Recipe:</h3>
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars-Vegan" name="rating-Vegan" value="5">
+                        <label for="5-stars-Vegan">&#9733;</label>
+
+                        <input type="radio" id="4-stars-Vegan" name="rating-Vegan" value="4">
+                        <label for="4-stars-Vegan">&#9733;</label>
+
+                        <input type="radio" id="3-stars-Vegan" name="rating-Vegan" value="3">
+                        <label for="3-stars-Vegan">&#9733;</label>
+
+                        <input type="radio" id="2-stars-Vegan" name="rating-Vegan" value="2">
+                        <label for="2-stars-Vegan">&#9733;</label>
+
+                        <input type="radio" id="1-star-Vegan" name="rating-Vegan" value="1">
+                        <label for="1-star-Vegan">&#9733;</label>
+                    </div>
+                    <input type="submit" value="Submit Rating">
+                </form>
+            </li>
+            <li>
+                <h3>Avocado Mango Salad</h3>
+                <img src="images/Avocado_Salad.jpg" alt="Avocado Mango Salad" width="300" height="300">
+                <p class="description">
+                    A vibrant blend of creamy avocado and sweet, juicy mango, paired with fresh greens and a light
+                    citrus dressing.
+                    This refreshing salad offers a perfect balance of rich and fruity flavors in every bite.
+                </p>
+                <table border="1">
+                    <tr>
+                        <th colspan="4">Nutritional Information (per serving)</th>
+                    </tr>
+                    <tr>
+                        <th>Calories</th>
+                        <th>Fat</th>
+                        <th>Protein</th>
+                        <th>Carbs</th>
+                    </tr>
+                    <tr>
+                        <td>160 kcal</td>
+                        <td>10g</td>
+                        <td>2g</td>
+                        <td>18g</td>
+                    </tr>
+
+                </table>
+                <br>
+                <a href="recipe-details.html" target="_blank">
+                    <input type="button" value="View Full Recipe Detail">
+                </a>
+                <form action="index.html" method="post">
+                    <h3>Rate this Recipe:</h3>
+                    <div class="star-rating">
+                        <input type="radio" id="5-stars-Avocado" name="rating-Avocado" value="5">
+                        <label for="5-stars-Avocado">&#9733;</label>
+
+                        <input type="radio" id="4-stars-Avocado" name="rating-Avocado" value="4">
+                        <label for="4-stars-Avocado">&#9733;</label>
+
+                        <input type="radio" id="3-stars-Avocado" name="rating-Avocado" value="3">
+                        <label for="3-stars-Avocado">&#9733;</label>
+
+                        <input type="radio" id="2-stars-Avocado" name="rating-Avocado" value="2">
+                        <label for="2-stars-Avocado">&#9733;</label>
+
+                        <input type="radio" id="1-star-Avocado" name="rating-Avocado" value="1">
+                        <label for="1-star-Avocado">&#9733;</label>
+                    </div>
+                    <input type="submit" value="Submit Rating">
+                </form>
+            </li>
+        </ul>
+        <h1>Daily Menu🥂</h1>
+
+        <table border="1">
+            <tr>
+                <th></th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday </th>
+                <th>Sunday</th>
+            </tr>
+            <tr>
+                <th>Ashak</th>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td></td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <th>Bolani</th>
+                <td>✔</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <th>Qabili Pallaw</th>
+                <td></td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <th>Chapli Kebab</th>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <th>sheer Pira</th>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <th>Cream Roll</th>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <th>IceCream</th>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <th>Sheer Chai</th>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <th>Green Tea</th>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <th>Sticks</th>
+                <td></td>
+                <td>✔</td>
+                <td>✔</td>
+                <td></td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <th>Fruits</th>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+            <tr>
+                <th>Salads</th>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+            </tr>
+
+        </table>
+
+
+    </ul>
+
+</body>
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2025 Narcissus Recipe Book. All rights reserved. </p>
+    </div>
+</footer>
+
+</html>
