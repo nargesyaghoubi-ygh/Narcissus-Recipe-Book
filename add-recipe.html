@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Add Recipe</title>
+</head>
+
+<body>
+    <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="add-recipe.html" class="active">Add Recipe</a>
+        <a href="recipe-list.html">Recipe List</a>
+
+    </nav>
+    <section>
+
+        <h2>This is your chance to add your favorite dish to our online recipe book! Just fill out the form below😉</h2>
+        <form action="index.html" method="get">
+            <p><label for="recipe">Recipe Name:</label></p>
+            <input type="text" id="recipe" name="recipe" placeholder="Enter the name of the recipe" required><br>
+
+            <p><label for="Ingredients">Ingredients:</label></p>
+            <textarea name="ingredients" id="Ingredients" cols="50" rows="4" placeholder="List the ingredients required"
+                required></textarea><br>
+
+            <p><label for="cooking">Cooking Instructions:</label></p>
+            <textarea name="cook" id="cooking" cols="50" rows="4"
+                placeholder="Provide step-by-step cooking instructions" required></textarea><br>
+
+
+
+            <p><label>Add a delicious photo of your dish😋:</label></p>
+            <input type="file" name="photo" required><br><br>
+
+
+            <label for="Category">Recipe Category:</label>
+            <select name="categary" id="Category" required>
+                <option value="" disabled selected>Category...</option>
+                <option value="appetizers">Appetizers</option>
+                <option value="main_dishes">Main Dishes</option>
+                <option value="desserts">Desserts</option>
+                <option value="salads">Salads</option>
+                <option value="drinks">Drinks</option>
+            </select><br><br>
+
+            <label for="">Submit your form</label>
+            <input type="submit" value="send form">
+
+
+        </form>
+    </section>
+
+</body>
+
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2025 Narcissus Recipe Book. All rights reserved. </p>
+    </div>
+</footer>
+
+</html>
